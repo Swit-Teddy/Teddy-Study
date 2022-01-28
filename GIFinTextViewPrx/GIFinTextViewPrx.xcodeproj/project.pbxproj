@@ -27,7 +27,6 @@
 		A84CCB5327A25E2200C4ECD0 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB5227A25E2200C4ECD0 /* Observable.swift */; };
 		A84CCB5627A2909500C4ECD0 /* emoji.json in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB5427A2909400C4ECD0 /* emoji.json */; };
 		A84CCB5727A2909500C4ECD0 /* emoji_sort.json in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB5527A2909500C4ECD0 /* emoji_sort.json */; };
-		A84CCB5927A2F50600C4ECD0 /* BodyBlocksKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB5827A2F50600C4ECD0 /* BodyBlocksKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +54,6 @@
 		A84CCB5227A25E2200C4ECD0 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		A84CCB5427A2909400C4ECD0 /* emoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emoji.json; sourceTree = "<group>"; };
 		A84CCB5527A2909500C4ECD0 /* emoji_sort.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emoji_sort.json; sourceTree = "<group>"; };
-		A84CCB5827A2F50600C4ECD0 /* BodyBlocksKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyBlocksKit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,7 +204,6 @@
 			children = (
 				A84CCB4427A2251800C4ECD0 /* DMMessage.swift */,
 				A84CCB4A27A252BA00C4ECD0 /* CHMessage.swift */,
-				A84CCB5827A2F50600C4ECD0 /* BodyBlocksKit.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -371,7 +368,6 @@
 				A84CCB1A27A10A0E00C4ECD0 /* ViewController.swift in Sources */,
 				A84CCB4B27A252BA00C4ECD0 /* CHMessage.swift in Sources */,
 				A84CCB4027A2219000C4ECD0 /* ChatService.swift in Sources */,
-				A84CCB5927A2F50600C4ECD0 /* BodyBlocksKit.swift in Sources */,
 				A84CCB1627A10A0E00C4ECD0 /* AppDelegate.swift in Sources */,
 				A84CCB2E27A11F0900C4ECD0 /* SecondViewController.swift in Sources */,
 				A84CCB1827A10A0E00C4ECD0 /* SceneDelegate.swift in Sources */,

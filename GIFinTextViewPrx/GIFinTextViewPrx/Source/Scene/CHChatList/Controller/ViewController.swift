@@ -38,7 +38,6 @@ class ViewController: UIViewController {
         super.viewWillAppear(true)
         
         chChatViewModel.loadCHChatData()
-        chChatViewModel.parseBodyBlocksKitToJson()
     }
     
     override func viewDidLayoutSubviews() {
@@ -56,7 +55,6 @@ class ViewController: UIViewController {
     func setBind(){
         self.chChatViewModel.chChatData.bind { test in
             print("chChatViewModel chChatData binding")
-//            print("test body_blockskit --> \(test[23].body_blockskit)")
         }
     }
     

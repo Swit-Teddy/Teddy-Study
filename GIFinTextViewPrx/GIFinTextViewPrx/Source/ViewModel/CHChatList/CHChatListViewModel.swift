@@ -16,20 +16,20 @@ class CHChatListViewModel {
         self.chatService.requestCHChatData { msgs in
             guard let msgs = msgs else { return }
             
-            
             self.chChatData.value.append(contentsOf: msgs.data.filter { $0.body_text != "" })
         }
+        // TODO: chChatData의 bodyBlocksKit string -> obj 형변환 [o]
+        self.parseBodyBlocksKitToJson()
     }
     
     //MARK: - bodyBlockskit 모델 String to Json
-    func parseBodyBlocksKitToJson(){
-        //TODO: 1. self.chChatData의 bodyBlock ...(json 형식을 띄고 있는 문자열) 을  string -> dic형태로 변환
-        //TODO: 2. dic -> json 객체로 변환
-        //TODO: 3. print 해보자 ㅋㅅㅋ
+    private func parseBodyBlocksKitToJson(){
+        //TODO: 1. self.chChatData의 bodyBlock ...(json 형식을 띄고 있는 문자열) 을  string -> dic형태로 변환 [o]
+        //TODO: 2. dic -> json 객체로 변환 [o]
+        //TODO: 3. json -> Custom 객체로 다시 변환 [o]
         
-        self.chChatData.value.forEach { message in
+        self.chChatData.value.enumerated().forEach { index, message in
            let strData = message.body_blockskit
-            
             var dicData : Dictionary<String, Any> = [String : Any]()
             
             do {
@@ -40,11 +40,11 @@ class CHChatListViewModel {
                 let data = try JSONSerialization.data(withJSONObject: dicData, options: .prettyPrinted)
                 //TODO: json -> BodyBlocksKit 객체화
                 let messages = try JSONDecoder().decode(BodyBlocksKit.self, from: data)
-                print("messages --> \(messages)")
+                //TODO: 현재 chChatData에 계산된 blocksKit 저장
+                self.chChatData.value[index].computedBlocksKit = messages
             } catch {
                 print(error.localizedDescription)
             }
-
         }//forEach
     }
 }
