@@ -11,10 +11,17 @@ import FlexLayout
 import PinLayout
 import Streamoji
 
+/*
+ MessageCell 에서 표현할 데이터 목록
+ 1. 맨션 - in bodyBlocksKit / textView
+ 2. 본문 - in bodyBlocksKit / textView
+ 3. 이모지 - in bodyBlocksKit / textView
+ 4. 리액션 - in bodyBlocksKit / textView 밑에
+ 5. 코맨트(나중에)
+ */
+
 class MessageCell: UITableViewCell {
     //MARK: - Properties
-    
-    
     static let identifier = "messageCell"
     let exampleEmoji: [String: EmojiSource] = [
         "switaction": .imageUrl("https://github.com/GetStream/Streamoji/blob/main/meta/emojis/let_me_in.gif?raw=true"),
@@ -62,10 +69,6 @@ class MessageCell: UITableViewCell {
     
     //MARK: - Functions
     func configure(bodyText: String){
-        
-//        String(unicodeScalarLiteral: "\u{d83c}\u{ddf2}\u{d83c}\u{ddf3}")
-//        self.textView.attributedText = NSAttributedString(string: self.dummyEmoji["key"] ?? "")
-//        self.textView.attributedText = NSAttributedString(string: bodyText)
         textView.flex.markDirty()
     }
     
