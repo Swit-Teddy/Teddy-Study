@@ -31,7 +31,6 @@ struct ElementElementClass: Codable {
     }
 }
 
-//
 //struct BodyBlocksKit : Codable{
 //    var type : String?
 //    var elements : [Elements]?
