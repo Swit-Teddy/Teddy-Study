@@ -61,8 +61,6 @@ class TableViewExampleViewController: UIViewController {
     func setUI(){
         self.view.addSubview(tableView)
         
-        self.tableView.pin.all(self.view.safeAreaInsets)
-        self.tableView.flex.layout()
     }
 }
 

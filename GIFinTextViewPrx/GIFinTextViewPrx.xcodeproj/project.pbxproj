@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2DF73A83A1125BF54BB6606 /* Pods_GIFinTextViewPrx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11078BDD06310ADAF5F7FD0A /* Pods_GIFinTextViewPrx.framework */; };
+		A84CCB1627A10A0E00C4ECD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB1527A10A0E00C4ECD0 /* AppDelegate.swift */; };
+		A84CCB1827A10A0E00C4ECD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB1727A10A0E00C4ECD0 /* SceneDelegate.swift */; };
+		A84CCB1A27A10A0E00C4ECD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB1927A10A0E00C4ECD0 /* ViewController.swift */; };
+		A84CCB1F27A10A1000C4ECD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB1E27A10A1000C4ECD0 /* Assets.xcassets */; };
+		A84CCB2227A10A1000C4ECD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB2027A10A1000C4ECD0 /* LaunchScreen.storyboard */; };
+		A84CCB2A27A10DA100C4ECD0 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB2927A10DA100C4ECD0 /* TabBarViewController.swift */; };
+		A84CCB2C27A11EC500C4ECD0 /* sample.GIF in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB2B27A11EC500C4ECD0 /* sample.GIF */; };
+		A84CCB2E27A11F0900C4ECD0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB2D27A11F0900C4ECD0 /* SecondViewController.swift */; };
+		A84CCB3027A1224100C4ECD0 /* jeremy.gif in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB2F27A1224100C4ECD0 /* jeremy.gif */; };
+		A84CCB3B27A21ECD00C4ECD0 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB3A27A21ECD00C4ECD0 /* MessageCell.swift */; };
+		A84CCB3E27A2214C00C4ECD0 /* dm_chat_list.json in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB3D27A2214C00C4ECD0 /* dm_chat_list.json */; };
+		A84CCB4027A2219000C4ECD0 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB3F27A2219000C4ECD0 /* ChatService.swift */; };
+		A84CCB4527A2251800C4ECD0 /* DMMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB4427A2251800C4ECD0 /* DMMessage.swift */; };
+		A84CCB4B27A252BA00C4ECD0 /* CHMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB4A27A252BA00C4ECD0 /* CHMessage.swift */; };
+		A84CCB4D27A2573E00C4ECD0 /* ch_chat_list.json in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB4C27A2573E00C4ECD0 /* ch_chat_list.json */; };
+		A84CCB5127A2588E00C4ECD0 /* CHChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB5027A2588E00C4ECD0 /* CHChatListViewModel.swift */; };
+		A84CCB5327A25E2200C4ECD0 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB5227A25E2200C4ECD0 /* Observable.swift */; };
+		A84CCB5627A2909500C4ECD0 /* emoji.json in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB5427A2909400C4ECD0 /* emoji.json */; };
+		A84CCB5727A2909500C4ECD0 /* emoji_sort.json in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB5527A2909500C4ECD0 /* emoji_sort.json */; };
+		A84CCB5927A2F50600C4ECD0 /* BodyBlocksKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB5827A2F50600C4ECD0 /* BodyBlocksKit.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11078BDD06310ADAF5F7FD0A /* Pods_GIFinTextViewPrx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIFinTextViewPrx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76C458B7E3C0F3423E7C4C0D /* Pods-GIFinTextViewPrx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFinTextViewPrx.release.xcconfig"; path = "Target Support Files/Pods-GIFinTextViewPrx/Pods-GIFinTextViewPrx.release.xcconfig"; sourceTree = "<group>"; };
+		82E6588DDBECDCC4194EAA64 /* Pods-GIFinTextViewPrx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFinTextViewPrx.debug.xcconfig"; path = "Target Support Files/Pods-GIFinTextViewPrx/Pods-GIFinTextViewPrx.debug.xcconfig"; sourceTree = "<group>"; };
+		A84CCB1227A10A0E00C4ECD0 /* GIFinTextViewPrx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFinTextViewPrx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84CCB1527A10A0E00C4ECD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A84CCB1727A10A0E00C4ECD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A84CCB1927A10A0E00C4ECD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A84CCB1E27A10A1000C4ECD0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A84CCB2127A10A1000C4ECD0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A84CCB2327A10A1000C4ECD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A84CCB2927A10DA100C4ECD0 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A84CCB2B27A11EC500C4ECD0 /* sample.GIF */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = sample.GIF; sourceTree = "<group>"; };
+		A84CCB2D27A11F0900C4ECD0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A84CCB2F27A1224100C4ECD0 /* jeremy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jeremy.gif; sourceTree = "<group>"; };
+		A84CCB3A27A21ECD00C4ECD0 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		A84CCB3D27A2214C00C4ECD0 /* dm_chat_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dm_chat_list.json; sourceTree = "<group>"; };
+		A84CCB3F27A2219000C4ECD0 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		A84CCB4427A2251800C4ECD0 /* DMMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMMessage.swift; sourceTree = "<group>"; };
+		A84CCB4A27A252BA00C4ECD0 /* CHMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHMessage.swift; sourceTree = "<group>"; };
+		A84CCB4C27A2573E00C4ECD0 /* ch_chat_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ch_chat_list.json; sourceTree = "<group>"; };
+		A84CCB5027A2588E00C4ECD0 /* CHChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHChatListViewModel.swift; sourceTree = "<group>"; };
+		A84CCB5227A25E2200C4ECD0 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		A84CCB5427A2909400C4ECD0 /* emoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emoji.json; sourceTree = "<group>"; };
+		A84CCB5527A2909500C4ECD0 /* emoji_sort.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emoji_sort.json; sourceTree = "<group>"; };
+		A84CCB5827A2F50600C4ECD0 /* BodyBlocksKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyBlocksKit.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A84CCB0F27A10A0E00C4ECD0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2DF73A83A1125BF54BB6606 /* Pods_GIFinTextViewPrx.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A84CCB0927A10A0E00C4ECD0 = {
+			isa = PBXGroup;
+			children = (
+				A84CCB1427A10A0E00C4ECD0 /* GIFinTextViewPrx */,
+				A84CCB1327A10A0E00C4ECD0 /* Products */,
+				CA81F923FA801EAA6F1F99BD /* Pods */,
+				EBDA69450A0A563D393490B2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A84CCB1327A10A0E00C4ECD0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB1227A10A0E00C4ECD0 /* GIFinTextViewPrx.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A84CCB1427A10A0E00C4ECD0 /* GIFinTextViewPrx */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB3127A21C1700C4ECD0 /* Application */,
+				A84CCB3227A21C2800C4ECD0 /* Resource */,
+				A84CCB3427A21C4300C4ECD0 /* Source */,
+				A84CCB2327A10A1000C4ECD0 /* Info.plist */,
+			);
+			path = GIFinTextViewPrx;
+			sourceTree = "<group>";
+		};
+		A84CCB3127A21C1700C4ECD0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB1527A10A0E00C4ECD0 /* AppDelegate.swift */,
+				A84CCB1727A10A0E00C4ECD0 /* SceneDelegate.swift */,
+				A84CCB2027A10A1000C4ECD0 /* LaunchScreen.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A84CCB3227A21C2800C4ECD0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB3327A21C3000C4ECD0 /* Json */,
+				A84CCB1E27A10A1000C4ECD0 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		A84CCB3327A21C3000C4ECD0 /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB5527A2909500C4ECD0 /* emoji_sort.json */,
+				A84CCB5427A2909400C4ECD0 /* emoji.json */,
+				A84CCB4C27A2573E00C4ECD0 /* ch_chat_list.json */,
+				A84CCB3D27A2214C00C4ECD0 /* dm_chat_list.json */,
+				A84CCB2F27A1224100C4ECD0 /* jeremy.gif */,
+				A84CCB2B27A11EC500C4ECD0 /* sample.GIF */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		A84CCB3427A21C4300C4ECD0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB3C27A220E800C4ECD0 /* Service */,
+				A84CCB3527A21C5000C4ECD0 /* Scene */,
+				A84CCB4127A224CE00C4ECD0 /* Model */,
+				A84CCB4E27A2583700C4ECD0 /* ViewModel */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A84CCB3527A21C5000C4ECD0 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB3627A21E6000C4ECD0 /* CHChatList */,
+				A84CCB3927A21E9A00C4ECD0 /* etc */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		A84CCB3627A21E6000C4ECD0 /* CHChatList */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB3827A21E8900C4ECD0 /* Controller */,
+				A84CCB3727A21E7400C4ECD0 /* Subviews */,
+			);
+			path = CHChatList;
+			sourceTree = "<group>";
+		};
+		A84CCB3727A21E7400C4ECD0 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB3A27A21ECD00C4ECD0 /* MessageCell.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		A84CCB3827A21E8900C4ECD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB1927A10A0E00C4ECD0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A84CCB3927A21E9A00C4ECD0 /* etc */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB2927A10DA100C4ECD0 /* TabBarViewController.swift */,
+				A84CCB2D27A11F0900C4ECD0 /* SecondViewController.swift */,
+			);
+			path = etc;
+			sourceTree = "<group>";
+		};
+		A84CCB3C27A220E800C4ECD0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB3F27A2219000C4ECD0 /* ChatService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A84CCB4127A224CE00C4ECD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB4327A224F700C4ECD0 /* Chat */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A84CCB4327A224F700C4ECD0 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB4427A2251800C4ECD0 /* DMMessage.swift */,
+				A84CCB4A27A252BA00C4ECD0 /* CHMessage.swift */,
+				A84CCB5827A2F50600C4ECD0 /* BodyBlocksKit.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		A84CCB4E27A2583700C4ECD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB4F27A2586900C4ECD0 /* CHChatList */,
+				A84CCB5227A25E2200C4ECD0 /* Observable.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A84CCB4F27A2586900C4ECD0 /* CHChatList */ = {
+			isa = PBXGroup;
+			children = (
+				A84CCB5027A2588E00C4ECD0 /* CHChatListViewModel.swift */,
+			);
+			path = CHChatList;
+			sourceTree = "<group>";
+		};
+		CA81F923FA801EAA6F1F99BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82E6588DDBECDCC4194EAA64 /* Pods-GIFinTextViewPrx.debug.xcconfig */,
+				76C458B7E3C0F3423E7C4C0D /* Pods-GIFinTextViewPrx.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EBDA69450A0A563D393490B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11078BDD06310ADAF5F7FD0A /* Pods_GIFinTextViewPrx.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A84CCB1127A10A0E00C4ECD0 /* GIFinTextViewPrx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A84CCB2627A10A1000C4ECD0 /* Build configuration list for PBXNativeTarget "GIFinTextViewPrx" */;
+			buildPhases = (
+				68CBC105E60B71CE5D1BAEB0 /* [CP] Check Pods Manifest.lock */,
+				A84CCB0E27A10A0E00C4ECD0 /* Sources */,
+				A84CCB0F27A10A0E00C4ECD0 /* Frameworks */,
+				A84CCB1027A10A0E00C4ECD0 /* Resources */,
+				51151ADBBB6FC199468A482D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GIFinTextViewPrx;
+			productName = GIFinTextViewPrx;
+			productReference = A84CCB1227A10A0E00C4ECD0 /* GIFinTextViewPrx.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A84CCB0A27A10A0E00C4ECD0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A84CCB1127A10A0E00C4ECD0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A84CCB0D27A10A0E00C4ECD0 /* Build configuration list for PBXProject "GIFinTextViewPrx" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A84CCB0927A10A0E00C4ECD0;
+			productRefGroup = A84CCB1327A10A0E00C4ECD0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A84CCB1127A10A0E00C4ECD0 /* GIFinTextViewPrx */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A84CCB1027A10A0E00C4ECD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84CCB4D27A2573E00C4ECD0 /* ch_chat_list.json in Resources */,
+				A84CCB5627A2909500C4ECD0 /* emoji.json in Resources */,
+				A84CCB5727A2909500C4ECD0 /* emoji_sort.json in Resources */,
+				A84CCB2C27A11EC500C4ECD0 /* sample.GIF in Resources */,
+				A84CCB3E27A2214C00C4ECD0 /* dm_chat_list.json in Resources */,
+				A84CCB2227A10A1000C4ECD0 /* LaunchScreen.storyboard in Resources */,
+				A84CCB3027A1224100C4ECD0 /* jeremy.gif in Resources */,
+				A84CCB1F27A10A1000C4ECD0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		51151ADBBB6FC199468A482D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIFinTextViewPrx/Pods-GIFinTextViewPrx-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GIFinTextViewPrx/Pods-GIFinTextViewPrx-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GIFinTextViewPrx/Pods-GIFinTextViewPrx-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68CBC105E60B71CE5D1BAEB0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GIFinTextViewPrx-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A84CCB0E27A10A0E00C4ECD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84CCB5327A25E2200C4ECD0 /* Observable.swift in Sources */,
+				A84CCB2A27A10DA100C4ECD0 /* TabBarViewController.swift in Sources */,
+				A84CCB4527A2251800C4ECD0 /* DMMessage.swift in Sources */,
+				A84CCB1A27A10A0E00C4ECD0 /* ViewController.swift in Sources */,
+				A84CCB4B27A252BA00C4ECD0 /* CHMessage.swift in Sources */,
+				A84CCB4027A2219000C4ECD0 /* ChatService.swift in Sources */,
+				A84CCB5927A2F50600C4ECD0 /* BodyBlocksKit.swift in Sources */,
+				A84CCB1627A10A0E00C4ECD0 /* AppDelegate.swift in Sources */,
+				A84CCB2E27A11F0900C4ECD0 /* SecondViewController.swift in Sources */,
+				A84CCB1827A10A0E00C4ECD0 /* SceneDelegate.swift in Sources */,
+				A84CCB3B27A21ECD00C4ECD0 /* MessageCell.swift in Sources */,
+				A84CCB5127A2588E00C4ECD0 /* CHChatListViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A84CCB2027A10A1000C4ECD0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A84CCB2127A10A1000C4ECD0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A84CCB2427A10A1000C4ECD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A84CCB2527A10A1000C4ECD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A84CCB2727A10A1000C4ECD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82E6588DDBECDCC4194EAA64 /* Pods-GIFinTextViewPrx.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7W64WHVKVN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GIFinTextViewPrx/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SoongIn.com.GIFinTextViewPrx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A84CCB2827A10A1000C4ECD0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76C458B7E3C0F3423E7C4C0D /* Pods-GIFinTextViewPrx.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7W64WHVKVN;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GIFinTextViewPrx/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SoongIn.com.GIFinTextViewPrx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A84CCB0D27A10A0E00C4ECD0 /* Build configuration list for PBXProject "GIFinTextViewPrx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84CCB2427A10A1000C4ECD0 /* Debug */,
+				A84CCB2527A10A1000C4ECD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A84CCB2627A10A1000C4ECD0 /* Build configuration list for PBXNativeTarget "GIFinTextViewPrx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84CCB2727A10A1000C4ECD0 /* Debug */,
+				A84CCB2827A10A1000C4ECD0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A84CCB0A27A10A0E00C4ECD0 /* Project object */;
+}

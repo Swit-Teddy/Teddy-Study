@@ -1,0 +1,6 @@
+framework module Pods_GIFinTextViewPrx {
+  umbrella header "Pods-GIFinTextViewPrx-umbrella.h"
+
+  export *
+  module * { export * }
+}
