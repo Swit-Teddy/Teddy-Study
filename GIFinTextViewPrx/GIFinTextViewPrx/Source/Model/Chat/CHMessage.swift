@@ -28,18 +28,21 @@ struct BodyBlocksKit: Codable {
     // MARK: - ChChatListElement
     struct ChChatListElement: Codable {
         let type: String
+        var indent: Int? // 행간 - 이거 점을 말하는듯함
         let elements: [ElementElementClass]
-    }
-    
-    // MARK: - ElementElementClass
-    struct ElementElementClass: Codable {
-        let type: String
-        let userID, content, name: String?
+        
+        // MARK: - ElementElementClass
+        struct ElementElementClass: Codable {
+            let type: String
+            var indent: Int? // 행간 - 이거 점을 말하는듯함
+            var elements: [ElementElementClass]? // type -> rt_section인 경우
+            let userID, content, name: String?
 
-        enum CodingKeys: String, CodingKey {
-            case type
-            case userID = "user_id"
-            case content, name
+            enum CodingKeys: String, CodingKey {
+                case type
+                case userID = "user_id"
+                case content, name
+            }
         }
     }
 }

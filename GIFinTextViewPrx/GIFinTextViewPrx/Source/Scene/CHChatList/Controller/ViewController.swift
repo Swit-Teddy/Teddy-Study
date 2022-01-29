@@ -54,7 +54,7 @@ class ViewController: UIViewController {
     
     func setBind(){
         self.chChatViewModel.chChatData.bind { test in
-            print("chChatViewModel chChatData binding")
+//            print("chChatViewModel chChatData binding")
         }
     }
     
@@ -74,8 +74,7 @@ extension ViewController: UITableViewDataSource{
             return UITableViewCell()
         }
         
-        cell.configure(bodyText:
-                        self.chChatViewModel.chChatData.value[indexPath.row].body_text)
+        cell.configure(chChatData: self.chChatViewModel.chChatData.value[indexPath.row])
         
         return cell
     }

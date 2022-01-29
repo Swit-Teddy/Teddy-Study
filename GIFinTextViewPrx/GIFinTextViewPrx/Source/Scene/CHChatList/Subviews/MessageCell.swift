@@ -68,7 +68,42 @@ class MessageCell: UITableViewCell {
     }
     
     //MARK: - Functions
-    func configure(bodyText: String){
+    func configure(chChatData: CHDataClass){
+        guard let computedBlocksKit = chChatData.computedBlocksKit else {
+            print("configure computedBlocksKit is nil")
+            return
+        }
+        
+        var dummyStr = ""
+        //TODO: 결과적으로 각 case 별 값들을 하나의 문자열로 합칠거다.
+        computedBlocksKit.elements.forEach { first in // 여기서
+            first.elements.forEach { element in
+//                print("element --> \(element)")
+                switch(element.type){
+                case "rt_emoji":
+                    //TODO: 이모지를 반환
+                    dummyStr = "\(dummyStr)\(element.name ?? "")"
+//                    print("element --> \(element)")
+                    break
+                case "rt_mention":
+                    //TODO: 맨션
+                    dummyStr = "\(dummyStr)\(element.name ?? "")"
+//                    print("element --> \(element)")
+                    break
+                case "rt_text":
+                    //TODO: 본문
+                    dummyStr = "\(dummyStr)\(element.name ?? "")"
+//                    print("element --> \(element)")
+                    break
+                default:
+                    //TODO: 예외
+//                    print("예외 type -> \(element.type), content -> \(element)")
+                    break
+                }
+            }
+//            print("dummy Str --> \(dummyStr)")
+        }
+        
         textView.flex.markDirty()
     }
     

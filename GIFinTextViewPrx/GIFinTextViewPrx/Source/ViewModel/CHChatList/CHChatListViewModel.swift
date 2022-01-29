@@ -35,7 +35,7 @@ class CHChatListViewModel {
             do {
                 // 딕셔너리에 데이터 저장 실시
                 dicData = try JSONSerialization.jsonObject(with: Data(strData.utf8), options: []) as! [String:Any]
-                
+                print("\(dicData)")
                 //TODO: Dic -> json
                 let data = try JSONSerialization.data(withJSONObject: dicData, options: .prettyPrinted)
                 //TODO: json -> BodyBlocksKit 객체화
