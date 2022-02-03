@@ -73,7 +73,7 @@ extension ViewController: UITableViewDataSource{
         else{
             return UITableViewCell()
         }
-        
+
         cell.configure(chChatData: self.chChatViewModel.chChatData.value[indexPath.row])
         
         return cell

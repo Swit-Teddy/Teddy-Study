@@ -31,7 +31,7 @@ class MessageCell: UITableViewCell {
         "bowing": .imageUrl("https://github.com/GetStream/Streamoji/blob/main/meta/emojis/let_me_in.gif?raw=true"),
         
     ]
-
+    
     //MARK: - UI Components
     var textView = UITextView().then {
         $0.isEditable = false
@@ -71,43 +71,33 @@ class MessageCell: UITableViewCell {
     }
     
     //MARK: - Functions
-    func configure(chChatData: CHDataClass){
-        guard let computedBlocksKit = chChatData.computedBlocksKit else {
-            print("configure computedBlocksKit is nil")
-            return
-        }
+    func configure(chChatData: Chat){
+        let atrStr = NSMutableAttributedString(string: "")
+        var bodyText = NSAttributedString(string: "")
+        let decoder = JSONDecoder()
+        let data = Data(chChatData.bodyBlockskit.utf8)
         
-        let dummyStr = NSMutableAttributedString(string: "")
+        bodyText = NSAttributedString(string: chChatData.bodyText)
         
-        computedBlocksKit.elements?.forEach{ element in
-            element.elements?.forEach{ item in
-                switch(item.type){
-                case .section:
-                    break
-                case .emoji:
-                    //TODO: emoji 전용 json 파일에서 매칭해서 넣어주자
-                    dummyStr.append(NSAttributedString(string: item.name ?? ""))
-                    break
-                case .text:
-                    dummyStr.append(NSAttributedString(string: item.content ?? ""))
-                    break
-                case .mention:
-                    dummyStr.append(NSAttributedString(string: item.userID ?? ""))
-                    break
-                case .link:
-                    dummyStr.append(NSAttributedString(string: item.content ?? ""))
-                    break
-                default:
-                    print("default")
-                    break
-                }
+        guard let result = try? decoder.decode(BodyBlocksKit.self, from: data) else { return }
+        guard let elements = result.elements else { return }
+        guard let element = elements.first else { return }
+        
+        element.elements!.forEach{ textElement in
+            if let item = textElement.applyText() {
+                atrStr.append(item)
             }
-            //TODO: textView에 str 넣기
-            dummyStr.addAttribute(.font,
-                                  value: UIFont.systemFont(ofSize: 16.0),
-                                  range: (dummyStr.string as NSString).range(of: dummyStr.string))
-            self.textView.attributedText = dummyStr
         }
+        
+        let textContent = NSMutableAttributedString(string: "").then{
+            let content = atrStr.string.count > 0 ? atrStr : bodyText
+            $0.append(content)
+            $0.addAttribute(.font,
+                            value: UIFont.systemFont(ofSize: 16.0),
+                            range: (content.string as NSString).range(of: content.string))
+        }
+        
+        self.textView.attributedText = textContent
         
         textView.flex.markDirty()
     }
@@ -123,39 +113,3 @@ class MessageCell: UITableViewCell {
         }
     }
 }
-
-
-
-//    first.elements?.forEach { element in
-////                print("element --> \(element)")
-//        switch(element.type){
-//        case  .text:
-//            //TODO: 이모지를 반환
-//            dummyStr = "\(dummyStr)\(element.name ?? "")"
-////                    print("text --> \(dummyStr)\n")
-//            break
-//        case .mention:
-//            //TODO: 맨션
-//            dummyStr = "\(dummyStr)\(element.userID ?? "")"
-////                    print("mention --> \(dummyStr)\n")
-//            break
-//        case .link:
-//            //TODO: 본문
-//            dummyStr = "\(dummyStr)\(element.content ?? ""), \(element.url)"
-////                    print("link --> \(dummyStr)\n")
-//            break
-//        case .emoji:
-//            //TODO: 본문
-//            dummyStr = "\(dummyStr)\(element.name ?? "")"
-////                    print("emoji --> \(dummyStr)\n")
-//            break
-//        case .section:
-//            //TODO: 본문
-//            dummyStr = "\(dummyStr)\(element.elements)"
-////                    print("section --> \(element)\n")
-//            break
-//        default:
-//            //TODO: 예외
-//            print("예외 type -> \(element.type), content -> \(element)\n")
-//            break
-//        }

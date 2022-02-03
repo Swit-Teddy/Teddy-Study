@@ -59,6 +59,24 @@ enum RichType: String, Codable {
     case section = "rt_section"
 }
 
+extension TextElements{
+    func applyText() -> NSAttributedString?{
+        switch(self.type){
+        case .text:
+            return NSAttributedString(string: self.content ?? "")
+        case .link:
+            return NSAttributedString(string: self.content ?? "")
+        case .emoji:
+            return NSAttributedString(string: self.name ?? "")
+        case .mention:
+            return NSAttributedString(string: "@" + (self.userID ?? "" ))
+        default:
+            print("exception error")
+            return nil
+        }
+    }
+}
+
 //extension TextElements{
 //    func applyStyle()->NSAttributedString{
 //        switch(self.type){
