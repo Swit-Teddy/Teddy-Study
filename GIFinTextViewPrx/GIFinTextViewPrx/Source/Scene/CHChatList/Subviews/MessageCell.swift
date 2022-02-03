@@ -36,7 +36,6 @@ class MessageCell: UITableViewCell {
     var textView = UITextView().then {
         $0.isEditable = false
         $0.isScrollEnabled = false
-        $0.font = .systemFont(ofSize: 30)
     }
     
     //MARK: - Life Cycle
@@ -77,10 +76,6 @@ class MessageCell: UITableViewCell {
             print("configure computedBlocksKit is nil")
             return
         }
-            
-//        let aaaa = "\u{d83d}\u{dc24}"
-//        let unicodedData = aaaa.data(using: String.Encoding.utf8, allowLossyConversion: true)
-//        let emojiString = String(data: unicodedData!, encoding: String.Encoding.utf8)
         
         let dummyStr = NSMutableAttributedString(string: "")
         
@@ -108,6 +103,9 @@ class MessageCell: UITableViewCell {
                 }
             }
             //TODO: textView에 str 넣기
+            dummyStr.addAttribute(.font,
+                                  value: UIFont.systemFont(ofSize: 16.0),
+                                  range: (dummyStr.string as NSString).range(of: dummyStr.string))
             self.textView.attributedText = dummyStr
         }
         
@@ -120,8 +118,8 @@ class MessageCell: UITableViewCell {
     }
     
     func setUI(){
-        self.contentView.flex.padding(16.0).define { flex in
-            flex.addItem(textView).grow(1)
+        self.contentView.flex.padding(8.0).define { flex in
+            flex.addItem(textView)
         }
     }
 }
