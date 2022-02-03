@@ -1,4 +1,11 @@
 PODS:
+  - Differ (1.4.5)
+  - DifferenceKit (1.2.0):
+    - DifferenceKit/Core (= 1.2.0)
+    - DifferenceKit/UIKitExtension (= 1.2.0)
+  - DifferenceKit/Core (1.2.0)
+  - DifferenceKit/UIKitExtension (1.2.0):
+    - DifferenceKit/Core
   - FlexLayout (1.3.23)
   - Kingfisher (7.1.2)
   - Nuke (8.4.1)
@@ -12,6 +19,8 @@ PODS:
   - Then (2.7.0)
 
 DEPENDENCIES:
+  - Differ
+  - DifferenceKit
   - FlexLayout
   - Kingfisher (~> 7.0)
   - PinLayout
@@ -22,6 +31,8 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Differ
+    - DifferenceKit
     - FlexLayout
     - Kingfisher
     - Nuke
@@ -33,6 +44,8 @@ SPEC REPOS:
     - Then
 
 SPEC CHECKSUMS:
+  Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
+  DifferenceKit: 5659c430bb7fe45876fa32ce5cba5d6167f0c805
   FlexLayout: 5b44c0538e7eaa2110e3160dfdfb74611676fb91
   Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
   Nuke: d780e3507a86b86c589ab3cc5cd302d5456f06fb
@@ -43,6 +56,6 @@ SPEC CHECKSUMS:
   SwiftyGif: dec758a9dd3d278e5a855dbf279bf062c923c387
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: b1580d99826d6d1a69579a779bbfc69bc2e94ca6
+PODFILE CHECKSUM: 0e1fa59c0a92d1a6d2dcf739bae20dff201232ef
 
 COCOAPODS: 1.11.2

@@ -1,4 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-GIFinTextViewPrx/Pods-GIFinTextViewPrx-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Differ/Differ.framework
+${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework
 ${BUILT_PRODUCTS_DIR}/FlexLayout/FlexLayout.framework
 ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
 ${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework
