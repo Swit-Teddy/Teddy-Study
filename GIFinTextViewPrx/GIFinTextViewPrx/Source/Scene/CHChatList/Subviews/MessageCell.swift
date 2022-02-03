@@ -73,35 +73,37 @@ class MessageCell: UITableViewCell {
             print("configure computedBlocksKit is nil")
             return
         }
-        
+            
         var dummyStr = ""
-        //TODO: 결과적으로 각 case 별 값들을 하나의 문자열로 합칠거다.
-        computedBlocksKit.elements.forEach { first in // 여기서
-            first.elements.forEach { element in
-//                print("element --> \(element)")
-                switch(element.type){
-                case "rt_emoji":
-                    //TODO: 이모지를 반환
-                    dummyStr = "\(dummyStr)\(element.name ?? "")"
-//                    print("element --> \(element)")
+        
+        computedBlocksKit.elements?.forEach{ element in
+            element.elements?.forEach{ item in
+                switch(item.type){
+                case .section:
+                    print("sections's elements--> \(item.elements)")
                     break
-                case "rt_mention":
-                    //TODO: 맨션
-                    dummyStr = "\(dummyStr)\(element.name ?? "")"
-//                    print("element --> \(element)")
+                case .emoji:
+                    dummyStr = "\(dummyStr)\(item.name)"
+                    print("emoji --> \(item.name)")
                     break
-                case "rt_text":
-                    //TODO: 본문
-                    dummyStr = "\(dummyStr)\(element.name ?? "")"
-//                    print("element --> \(element)")
+                case .text:
+                    dummyStr = "\(dummyStr)\(item.content)"
+                    print("content --> \(item.content)")
+                    break
+                case .mention:
+                    dummyStr = "\(dummyStr)\(item.userID)"
+                    print("mention user id --> \(item.userID)")
+                    break
+                case .link:
+                    dummyStr = "\(dummyStr)\(item.content)"
+                    print("link content, url -> \(item.content), \(item.url)")
                     break
                 default:
-                    //TODO: 예외
-//                    print("예외 type -> \(element.type), content -> \(element)")
+                    print("default")
                     break
                 }
             }
-//            print("dummy Str --> \(dummyStr)")
+            print("dummyy-- ,> \(dummyStr)")
         }
         
         textView.flex.markDirty()
@@ -118,3 +120,39 @@ class MessageCell: UITableViewCell {
         }
     }
 }
+
+
+
+//    first.elements?.forEach { element in
+////                print("element --> \(element)")
+//        switch(element.type){
+//        case  .text:
+//            //TODO: 이모지를 반환
+//            dummyStr = "\(dummyStr)\(element.name ?? "")"
+////                    print("text --> \(dummyStr)\n")
+//            break
+//        case .mention:
+//            //TODO: 맨션
+//            dummyStr = "\(dummyStr)\(element.userID ?? "")"
+////                    print("mention --> \(dummyStr)\n")
+//            break
+//        case .link:
+//            //TODO: 본문
+//            dummyStr = "\(dummyStr)\(element.content ?? ""), \(element.url)"
+////                    print("link --> \(dummyStr)\n")
+//            break
+//        case .emoji:
+//            //TODO: 본문
+//            dummyStr = "\(dummyStr)\(element.name ?? "")"
+////                    print("emoji --> \(dummyStr)\n")
+//            break
+//        case .section:
+//            //TODO: 본문
+//            dummyStr = "\(dummyStr)\(element.elements)"
+////                    print("section --> \(element)\n")
+//            break
+//        default:
+//            //TODO: 예외
+//            print("예외 type -> \(element.type), content -> \(element)\n")
+//            break
+//        }

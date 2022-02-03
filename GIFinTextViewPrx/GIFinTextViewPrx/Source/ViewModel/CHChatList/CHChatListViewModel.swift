@@ -33,18 +33,18 @@ class CHChatListViewModel {
             var dicData : Dictionary<String, Any> = [String : Any]()
             
             do {
-                // 딕셔너리에 데이터 저장 실시
+//                 딕셔너리에 데이터 저장 실시
                 dicData = try JSONSerialization.jsonObject(with: Data(strData.utf8), options: []) as! [String:Any]
-                print("\(dicData)")
                 //TODO: Dic -> json
                 let data = try JSONSerialization.data(withJSONObject: dicData, options: .prettyPrinted)
                 //TODO: json -> BodyBlocksKit 객체화
                 let messages = try JSONDecoder().decode(BodyBlocksKit.self, from: data)
-                //TODO: 현재 chChatData에 계산된 blocksKit 저장
+                
                 self.chChatData.value[index].computedBlocksKit = messages
             } catch {
                 print(error.localizedDescription)
             }
         }//forEach
+        
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A2DF73A83A1125BF54BB6606 /* Pods_GIFinTextViewPrx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11078BDD06310ADAF5F7FD0A /* Pods_GIFinTextViewPrx.framework */; };
+		A82C9CD527A54BB10007B517 /* DummyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C9CD427A54BB10007B517 /* DummyMessage.swift */; };
 		A84CCB1627A10A0E00C4ECD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB1527A10A0E00C4ECD0 /* AppDelegate.swift */; };
 		A84CCB1827A10A0E00C4ECD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB1727A10A0E00C4ECD0 /* SceneDelegate.swift */; };
 		A84CCB1A27A10A0E00C4ECD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB1927A10A0E00C4ECD0 /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		11078BDD06310ADAF5F7FD0A /* Pods_GIFinTextViewPrx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIFinTextViewPrx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C458B7E3C0F3423E7C4C0D /* Pods-GIFinTextViewPrx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFinTextViewPrx.release.xcconfig"; path = "Target Support Files/Pods-GIFinTextViewPrx/Pods-GIFinTextViewPrx.release.xcconfig"; sourceTree = "<group>"; };
 		82E6588DDBECDCC4194EAA64 /* Pods-GIFinTextViewPrx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFinTextViewPrx.debug.xcconfig"; path = "Target Support Files/Pods-GIFinTextViewPrx/Pods-GIFinTextViewPrx.debug.xcconfig"; sourceTree = "<group>"; };
+		A82C9CD427A54BB10007B517 /* DummyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyMessage.swift; sourceTree = "<group>"; };
 		A84CCB1227A10A0E00C4ECD0 /* GIFinTextViewPrx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFinTextViewPrx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84CCB1527A10A0E00C4ECD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A84CCB1727A10A0E00C4ECD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			children = (
 				A84CCB4427A2251800C4ECD0 /* DMMessage.swift */,
 				A84CCB4A27A252BA00C4ECD0 /* CHMessage.swift */,
+				A82C9CD427A54BB10007B517 /* DummyMessage.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				A84CCB1A27A10A0E00C4ECD0 /* ViewController.swift in Sources */,
 				A84CCB4B27A252BA00C4ECD0 /* CHMessage.swift in Sources */,
 				A84CCB4027A2219000C4ECD0 /* ChatService.swift in Sources */,
+				A82C9CD527A54BB10007B517 /* DummyMessage.swift in Sources */,
 				A84CCB1627A10A0E00C4ECD0 /* AppDelegate.swift in Sources */,
 				A84CCB2E27A11F0900C4ECD0 /* SecondViewController.swift in Sources */,
 				A84CCB1827A10A0E00C4ECD0 /* SceneDelegate.swift in Sources */,
