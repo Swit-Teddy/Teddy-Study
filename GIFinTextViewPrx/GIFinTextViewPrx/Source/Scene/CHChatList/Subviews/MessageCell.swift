@@ -25,14 +25,18 @@ class MessageCell: UITableViewCell {
     static let identifier = "messageCell"
     let exampleEmoji: [String: EmojiSource] = [
         "switaction": .imageUrl("https://github.com/GetStream/Streamoji/blob/main/meta/emojis/let_me_in.gif?raw=true"),
-        "swit":.imageAsset("jeremy")
+        "swit":.imageAsset("jeremy"),
+        "switactiongreen": .character("😃"),
+        "blush": .imageUrl("https://github.com/GetStream/Streamoji/blob/main/meta/emojis/let_me_in.gif?raw=true"),
+        "bowing": .imageUrl("https://github.com/GetStream/Streamoji/blob/main/meta/emojis/let_me_in.gif?raw=true"),
+        
     ]
 
     //MARK: - UI Components
     var textView = UITextView().then {
         $0.isEditable = false
         $0.isScrollEnabled = false
-        $0.font = .systemFont(ofSize: 20)
+        $0.font = .systemFont(ofSize: 30)
     }
     
     //MARK: - Life Cycle
@@ -74,36 +78,37 @@ class MessageCell: UITableViewCell {
             return
         }
             
-        var dummyStr = ""
+//        let aaaa = "\u{d83d}\u{dc24}"
+//        let unicodedData = aaaa.data(using: String.Encoding.utf8, allowLossyConversion: true)
+//        let emojiString = String(data: unicodedData!, encoding: String.Encoding.utf8)
+        
+        let dummyStr = NSMutableAttributedString(string: "")
         
         computedBlocksKit.elements?.forEach{ element in
             element.elements?.forEach{ item in
                 switch(item.type){
                 case .section:
-                    print("sections's elements--> \(item.elements)")
                     break
                 case .emoji:
-                    dummyStr = "\(dummyStr)\(item.name)"
-                    print("emoji --> \(item.name)")
+                    //TODO: emoji 전용 json 파일에서 매칭해서 넣어주자
+                    dummyStr.append(NSAttributedString(string: item.name ?? ""))
                     break
                 case .text:
-                    dummyStr = "\(dummyStr)\(item.content)"
-                    print("content --> \(item.content)")
+                    dummyStr.append(NSAttributedString(string: item.content ?? ""))
                     break
                 case .mention:
-                    dummyStr = "\(dummyStr)\(item.userID)"
-                    print("mention user id --> \(item.userID)")
+                    dummyStr.append(NSAttributedString(string: item.userID ?? ""))
                     break
                 case .link:
-                    dummyStr = "\(dummyStr)\(item.content)"
-                    print("link content, url -> \(item.content), \(item.url)")
+                    dummyStr.append(NSAttributedString(string: item.content ?? ""))
                     break
                 default:
                     print("default")
                     break
                 }
             }
-            print("dummyy-- ,> \(dummyStr)")
+            //TODO: textView에 str 넣기
+            self.textView.attributedText = dummyStr
         }
         
         textView.flex.markDirty()
