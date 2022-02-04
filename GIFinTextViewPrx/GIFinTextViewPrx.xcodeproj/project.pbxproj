@@ -28,6 +28,7 @@
 		A84CCB5627A2909500C4ECD0 /* emoji.json in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB5427A2909400C4ECD0 /* emoji.json */; };
 		A84CCB5727A2909500C4ECD0 /* emoji_sort.json in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB5527A2909500C4ECD0 /* emoji_sort.json */; };
 		A86700B427AB61470040366C /* EmojiUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700B327AB61470040366C /* EmojiUtil.swift */; };
+		A86700B727AC1F590040366C /* ChatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700B627AC1F590040366C /* ChatExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		A84CCB5427A2909400C4ECD0 /* emoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emoji.json; sourceTree = "<group>"; };
 		A84CCB5527A2909500C4ECD0 /* emoji_sort.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emoji_sort.json; sourceTree = "<group>"; };
 		A86700B327AB61470040366C /* EmojiUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiUtil.swift; sourceTree = "<group>"; };
+		A86700B627AC1F590040366C /* ChatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +136,7 @@
 		A84CCB3427A21C4300C4ECD0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A86700B527AC1F0E0040366C /* Extension */,
 				A86700B127AB612B0040366C /* Utils */,
 				A84CCB3C27A220E800C4ECD0 /* Service */,
 				A84CCB3527A21C5000C4ECD0 /* Scene */,
@@ -234,6 +237,14 @@
 				A86700B327AB61470040366C /* EmojiUtil.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A86700B527AC1F0E0040366C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A86700B627AC1F590040366C /* ChatExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		CA81F923FA801EAA6F1F99BD /* Pods */ = {
@@ -380,6 +391,7 @@
 				A84CCB4027A2219000C4ECD0 /* ChatService.swift in Sources */,
 				A82C9CD527A54BB10007B517 /* BodyBlocksKit.swift in Sources */,
 				A86700B427AB61470040366C /* EmojiUtil.swift in Sources */,
+				A86700B727AC1F590040366C /* ChatExtension.swift in Sources */,
 				A84CCB1627A10A0E00C4ECD0 /* AppDelegate.swift in Sources */,
 				A84CCB2E27A11F0900C4ECD0 /* SecondViewController.swift in Sources */,
 				A84CCB1827A10A0E00C4ECD0 /* SceneDelegate.swift in Sources */,

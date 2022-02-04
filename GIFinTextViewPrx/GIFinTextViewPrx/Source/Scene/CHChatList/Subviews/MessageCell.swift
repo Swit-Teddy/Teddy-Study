@@ -72,32 +72,7 @@ class MessageCell: UITableViewCell {
     
     //MARK: - Functions
     func configure(chChatData: Chat){
-        let atrStr = NSMutableAttributedString(string: "")
-        var bodyText = NSAttributedString(string: "")
-        let decoder = JSONDecoder()
-        let data = Data(chChatData.bodyBlockskit.utf8)
-        
-        bodyText = NSAttributedString(string: chChatData.bodyText)
-        
-        guard let result = try? decoder.decode(BodyBlocksKit.self, from: data) else { return }
-        guard let elements = result.elements else { return }
-        guard let element = elements.first else { return }
-        
-        element.elements!.forEach{ textElement in
-            if let item = textElement.applyText() {
-                atrStr.append(item)
-            }
-        }
-        
-        let textContent = NSMutableAttributedString(string: "").then{
-            let content = atrStr.string.count > 0 ? atrStr : bodyText
-            $0.append(content)
-            $0.addAttribute(.font,
-                            value: UIFont.systemFont(ofSize: 16.0),
-                            range: (content.string as NSString).range(of: content.string))
-        }
-        
-        self.textView.attributedText = textContent
+        self.textView.attributedText = chChatData.getChatContent(size: 16.0)
         
         textView.flex.markDirty()
     }
