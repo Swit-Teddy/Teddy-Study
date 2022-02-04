@@ -29,6 +29,12 @@
 		A84CCB5727A2909500C4ECD0 /* emoji_sort.json in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB5527A2909500C4ECD0 /* emoji_sort.json */; };
 		A86700B427AB61470040366C /* EmojiUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700B327AB61470040366C /* EmojiUtil.swift */; };
 		A86700B727AC1F590040366C /* ChatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700B627AC1F590040366C /* ChatExtension.swift */; };
+		A86700BA27ACB12B0040366C /* StremojiTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700B927ACB12B0040366C /* StremojiTestViewController.swift */; };
+		A86700BC27ACB1FC0040366C /* StremojiTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700BB27ACB1FC0040366C /* StremojiTestCell.swift */; };
+		A86700BE27ACC8140040366C /* MyTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700BD27ACC8140040366C /* MyTextAttachment.swift */; };
+		A86700C127ACDDE70040366C /* GifuTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700C027ACDDE70040366C /* GifuTestViewController.swift */; };
+		A86700C327ACDE4E0040366C /* GifuTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700C227ACDE4E0040366C /* GifuTestCell.swift */; };
+		A86700C527ACDEEA0040366C /* TextView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700C427ACDEEA0040366C /* TextView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +64,12 @@
 		A84CCB5527A2909500C4ECD0 /* emoji_sort.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emoji_sort.json; sourceTree = "<group>"; };
 		A86700B327AB61470040366C /* EmojiUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiUtil.swift; sourceTree = "<group>"; };
 		A86700B627AC1F590040366C /* ChatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatExtension.swift; sourceTree = "<group>"; };
+		A86700B927ACB12B0040366C /* StremojiTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StremojiTestViewController.swift; sourceTree = "<group>"; };
+		A86700BB27ACB1FC0040366C /* StremojiTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StremojiTestCell.swift; sourceTree = "<group>"; };
+		A86700BD27ACC8140040366C /* MyTextAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextAttachment.swift; sourceTree = "<group>"; };
+		A86700C027ACDDE70040366C /* GifuTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifuTestViewController.swift; sourceTree = "<group>"; };
+		A86700C227ACDE4E0040366C /* GifuTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifuTestCell.swift; sourceTree = "<group>"; };
+		A86700C427ACDEEA0040366C /* TextView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +161,8 @@
 		A84CCB3527A21C5000C4ECD0 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				A86700BF27ACDDBD0040366C /* GifuTest */,
+				A86700B827ACB1050040366C /* StremojiTest */,
 				A84CCB3627A21E6000C4ECD0 /* CHChatList */,
 				A84CCB3927A21E9A00C4ECD0 /* etc */,
 			);
@@ -243,8 +257,28 @@
 			isa = PBXGroup;
 			children = (
 				A86700B627AC1F590040366C /* ChatExtension.swift */,
+				A86700C427ACDEEA0040366C /* TextView + Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		A86700B827ACB1050040366C /* StremojiTest */ = {
+			isa = PBXGroup;
+			children = (
+				A86700B927ACB12B0040366C /* StremojiTestViewController.swift */,
+				A86700BB27ACB1FC0040366C /* StremojiTestCell.swift */,
+				A86700BD27ACC8140040366C /* MyTextAttachment.swift */,
+			);
+			path = StremojiTest;
+			sourceTree = "<group>";
+		};
+		A86700BF27ACDDBD0040366C /* GifuTest */ = {
+			isa = PBXGroup;
+			children = (
+				A86700C027ACDDE70040366C /* GifuTestViewController.swift */,
+				A86700C227ACDE4E0040366C /* GifuTestCell.swift */,
+			);
+			path = GifuTest;
 			sourceTree = "<group>";
 		};
 		CA81F923FA801EAA6F1F99BD /* Pods */ = {
@@ -384,16 +418,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86700BA27ACB12B0040366C /* StremojiTestViewController.swift in Sources */,
 				A84CCB5327A25E2200C4ECD0 /* Observable.swift in Sources */,
 				A84CCB2A27A10DA100C4ECD0 /* TabBarViewController.swift in Sources */,
 				A84CCB4527A2251800C4ECD0 /* ChatList.swift in Sources */,
 				A84CCB1A27A10A0E00C4ECD0 /* ViewController.swift in Sources */,
+				A86700C527ACDEEA0040366C /* TextView + Extension.swift in Sources */,
+				A86700BE27ACC8140040366C /* MyTextAttachment.swift in Sources */,
+				A86700C327ACDE4E0040366C /* GifuTestCell.swift in Sources */,
 				A84CCB4027A2219000C4ECD0 /* ChatService.swift in Sources */,
 				A82C9CD527A54BB10007B517 /* BodyBlocksKit.swift in Sources */,
 				A86700B427AB61470040366C /* EmojiUtil.swift in Sources */,
+				A86700C127ACDDE70040366C /* GifuTestViewController.swift in Sources */,
 				A86700B727AC1F590040366C /* ChatExtension.swift in Sources */,
 				A84CCB1627A10A0E00C4ECD0 /* AppDelegate.swift in Sources */,
 				A84CCB2E27A11F0900C4ECD0 /* SecondViewController.swift in Sources */,
+				A86700BC27ACB1FC0040366C /* StremojiTestCell.swift in Sources */,
 				A84CCB1827A10A0E00C4ECD0 /* SceneDelegate.swift in Sources */,
 				A84CCB3B27A21ECD00C4ECD0 /* MessageCell.swift in Sources */,
 				A84CCB5127A2588E00C4ECD0 /* CHChatListViewModel.swift in Sources */,

@@ -2,6 +2,7 @@ ${PODS_ROOT}/Target Support Files/Pods-GIFinTextViewPrx/Pods-GIFinTextViewPrx-fr
 ${BUILT_PRODUCTS_DIR}/Differ/Differ.framework
 ${BUILT_PRODUCTS_DIR}/DifferenceKit/DifferenceKit.framework
 ${BUILT_PRODUCTS_DIR}/FlexLayout/FlexLayout.framework
+${BUILT_PRODUCTS_DIR}/Gifu/Gifu.framework
 ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
 ${BUILT_PRODUCTS_DIR}/Nuke/Nuke.framework
 ${BUILT_PRODUCTS_DIR}/PinLayout/PinLayout.framework
@@ -10,3 +11,4 @@ ${BUILT_PRODUCTS_DIR}/Streamoji/Streamoji.framework
 ${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyGif/SwiftyGif.framework
 ${BUILT_PRODUCTS_DIR}/Then/Then.framework
+${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework

@@ -15,4 +15,6 @@ target 'GIFinTextViewPrx' do
   pod 'Streamoji'
   pod 'Differ'
   pod 'DifferenceKit'
+  pod 'Gifu'
+  pod 'lottie-ios'
 end

@@ -11,17 +11,24 @@ import Then
 
 class TabBarViewController: UITabBarController {
     lazy var earlybirdVC = ViewController().then{
-        $0.tabBarItem = UITabBarItem(title: "얼리버드",
+        $0.tabBarItem = UITabBarItem(title: "채팅",
                                      image: UIImage(systemName: "star"),
                                      selectedImage: UIImage(systemName: "star")?.withRenderingMode(.alwaysOriginal))
         $0.navigationItem.largeTitleDisplayMode = .always
     }
-    let exhibitVC = SecondViewController().then{
-        $0.tabBarItem = UITabBarItem(title: "전시",
+    let exhibitVC = StremojiTestViewController().then{
+        $0.tabBarItem = UITabBarItem(title: "Stremo",
                                      image: UIImage(systemName: "star"),
                                      selectedImage: UIImage(systemName: "star")?.withRenderingMode(.alwaysOriginal))
         $0.navigationItem.largeTitleDisplayMode = .always
     }
+    let gifuTestVC = GifuTestViewController().then{
+        $0.tabBarItem = UITabBarItem(title: "gifu",
+                                     image: UIImage(systemName: "star"),
+                                     selectedImage: UIImage(systemName: "star")?.withRenderingMode(.alwaysOriginal))
+        $0.navigationItem.largeTitleDisplayMode = .always
+    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,10 +55,12 @@ class TabBarViewController: UITabBarController {
     private func setTabBarLink() {
         let earlybiard = UINavigationController(rootViewController: earlybirdVC)
         let exhibit = UINavigationController(rootViewController: exhibitVC)
+        let gifuTest = UINavigationController(rootViewController: gifuTestVC)
         
         viewControllers = [
             earlybiard,
-            exhibit
+            exhibit,
+            gifuTest
         ]
         
     }
