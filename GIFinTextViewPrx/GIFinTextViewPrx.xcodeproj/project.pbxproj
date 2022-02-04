@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A2DF73A83A1125BF54BB6606 /* Pods_GIFinTextViewPrx.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11078BDD06310ADAF5F7FD0A /* Pods_GIFinTextViewPrx.framework */; };
-		A82C9CD527A54BB10007B517 /* DummyMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C9CD427A54BB10007B517 /* DummyMessage.swift */; };
+		A82C9CD527A54BB10007B517 /* BodyBlocksKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C9CD427A54BB10007B517 /* BodyBlocksKit.swift */; };
 		A84CCB1627A10A0E00C4ECD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB1527A10A0E00C4ECD0 /* AppDelegate.swift */; };
 		A84CCB1827A10A0E00C4ECD0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB1727A10A0E00C4ECD0 /* SceneDelegate.swift */; };
 		A84CCB1A27A10A0E00C4ECD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB1927A10A0E00C4ECD0 /* ViewController.swift */; };
@@ -19,23 +19,29 @@
 		A84CCB2E27A11F0900C4ECD0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB2D27A11F0900C4ECD0 /* SecondViewController.swift */; };
 		A84CCB3027A1224100C4ECD0 /* jeremy.gif in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB2F27A1224100C4ECD0 /* jeremy.gif */; };
 		A84CCB3B27A21ECD00C4ECD0 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB3A27A21ECD00C4ECD0 /* MessageCell.swift */; };
-		A84CCB3E27A2214C00C4ECD0 /* dm_chat_list.json in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB3D27A2214C00C4ECD0 /* dm_chat_list.json */; };
+		A84CCB3E27A2214C00C4ECD0 /* news_channel.json in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB3D27A2214C00C4ECD0 /* news_channel.json */; };
 		A84CCB4027A2219000C4ECD0 /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB3F27A2219000C4ECD0 /* ChatService.swift */; };
-		A84CCB4527A2251800C4ECD0 /* DMMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB4427A2251800C4ECD0 /* DMMessage.swift */; };
-		A84CCB4B27A252BA00C4ECD0 /* CHMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB4A27A252BA00C4ECD0 /* CHMessage.swift */; };
+		A84CCB4527A2251800C4ECD0 /* ChatList.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB4427A2251800C4ECD0 /* ChatList.swift */; };
 		A84CCB4D27A2573E00C4ECD0 /* ch_chat_list.json in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB4C27A2573E00C4ECD0 /* ch_chat_list.json */; };
 		A84CCB5127A2588E00C4ECD0 /* CHChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB5027A2588E00C4ECD0 /* CHChatListViewModel.swift */; };
 		A84CCB5327A25E2200C4ECD0 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84CCB5227A25E2200C4ECD0 /* Observable.swift */; };
 		A84CCB5627A2909500C4ECD0 /* emoji.json in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB5427A2909400C4ECD0 /* emoji.json */; };
 		A84CCB5727A2909500C4ECD0 /* emoji_sort.json in Resources */ = {isa = PBXBuildFile; fileRef = A84CCB5527A2909500C4ECD0 /* emoji_sort.json */; };
 		A86700B427AB61470040366C /* EmojiUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700B327AB61470040366C /* EmojiUtil.swift */; };
+		A86700B727AC1F590040366C /* ChatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700B627AC1F590040366C /* ChatExtension.swift */; };
+		A86700BA27ACB12B0040366C /* StremojiTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700B927ACB12B0040366C /* StremojiTestViewController.swift */; };
+		A86700BC27ACB1FC0040366C /* StremojiTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700BB27ACB1FC0040366C /* StremojiTestCell.swift */; };
+		A86700BE27ACC8140040366C /* MyTextAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700BD27ACC8140040366C /* MyTextAttachment.swift */; };
+		A86700C127ACDDE70040366C /* GifuTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700C027ACDDE70040366C /* GifuTestViewController.swift */; };
+		A86700C327ACDE4E0040366C /* GifuTestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700C227ACDE4E0040366C /* GifuTestCell.swift */; };
+		A86700C527ACDEEA0040366C /* TextView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86700C427ACDEEA0040366C /* TextView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11078BDD06310ADAF5F7FD0A /* Pods_GIFinTextViewPrx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GIFinTextViewPrx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C458B7E3C0F3423E7C4C0D /* Pods-GIFinTextViewPrx.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFinTextViewPrx.release.xcconfig"; path = "Target Support Files/Pods-GIFinTextViewPrx/Pods-GIFinTextViewPrx.release.xcconfig"; sourceTree = "<group>"; };
 		82E6588DDBECDCC4194EAA64 /* Pods-GIFinTextViewPrx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GIFinTextViewPrx.debug.xcconfig"; path = "Target Support Files/Pods-GIFinTextViewPrx/Pods-GIFinTextViewPrx.debug.xcconfig"; sourceTree = "<group>"; };
-		A82C9CD427A54BB10007B517 /* DummyMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyMessage.swift; sourceTree = "<group>"; };
+		A82C9CD427A54BB10007B517 /* BodyBlocksKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyBlocksKit.swift; sourceTree = "<group>"; };
 		A84CCB1227A10A0E00C4ECD0 /* GIFinTextViewPrx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GIFinTextViewPrx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84CCB1527A10A0E00C4ECD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A84CCB1727A10A0E00C4ECD0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,16 +54,22 @@
 		A84CCB2D27A11F0900C4ECD0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A84CCB2F27A1224100C4ECD0 /* jeremy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = jeremy.gif; sourceTree = "<group>"; };
 		A84CCB3A27A21ECD00C4ECD0 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
-		A84CCB3D27A2214C00C4ECD0 /* dm_chat_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dm_chat_list.json; sourceTree = "<group>"; };
+		A84CCB3D27A2214C00C4ECD0 /* news_channel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = news_channel.json; sourceTree = "<group>"; };
 		A84CCB3F27A2219000C4ECD0 /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
-		A84CCB4427A2251800C4ECD0 /* DMMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMMessage.swift; sourceTree = "<group>"; };
-		A84CCB4A27A252BA00C4ECD0 /* CHMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHMessage.swift; sourceTree = "<group>"; };
+		A84CCB4427A2251800C4ECD0 /* ChatList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatList.swift; sourceTree = "<group>"; };
 		A84CCB4C27A2573E00C4ECD0 /* ch_chat_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ch_chat_list.json; sourceTree = "<group>"; };
 		A84CCB5027A2588E00C4ECD0 /* CHChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHChatListViewModel.swift; sourceTree = "<group>"; };
 		A84CCB5227A25E2200C4ECD0 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		A84CCB5427A2909400C4ECD0 /* emoji.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emoji.json; sourceTree = "<group>"; };
 		A84CCB5527A2909500C4ECD0 /* emoji_sort.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emoji_sort.json; sourceTree = "<group>"; };
 		A86700B327AB61470040366C /* EmojiUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiUtil.swift; sourceTree = "<group>"; };
+		A86700B627AC1F590040366C /* ChatExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatExtension.swift; sourceTree = "<group>"; };
+		A86700B927ACB12B0040366C /* StremojiTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StremojiTestViewController.swift; sourceTree = "<group>"; };
+		A86700BB27ACB1FC0040366C /* StremojiTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StremojiTestCell.swift; sourceTree = "<group>"; };
+		A86700BD27ACC8140040366C /* MyTextAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextAttachment.swift; sourceTree = "<group>"; };
+		A86700C027ACDDE70040366C /* GifuTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifuTestViewController.swift; sourceTree = "<group>"; };
+		A86700C227ACDE4E0040366C /* GifuTestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifuTestCell.swift; sourceTree = "<group>"; };
+		A86700C427ACDEEA0040366C /* TextView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +138,7 @@
 				A84CCB5527A2909500C4ECD0 /* emoji_sort.json */,
 				A84CCB5427A2909400C4ECD0 /* emoji.json */,
 				A84CCB4C27A2573E00C4ECD0 /* ch_chat_list.json */,
-				A84CCB3D27A2214C00C4ECD0 /* dm_chat_list.json */,
+				A84CCB3D27A2214C00C4ECD0 /* news_channel.json */,
 				A84CCB2F27A1224100C4ECD0 /* jeremy.gif */,
 				A84CCB2B27A11EC500C4ECD0 /* sample.GIF */,
 			);
@@ -136,6 +148,7 @@
 		A84CCB3427A21C4300C4ECD0 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A86700B527AC1F0E0040366C /* Extension */,
 				A86700B127AB612B0040366C /* Utils */,
 				A84CCB3C27A220E800C4ECD0 /* Service */,
 				A84CCB3527A21C5000C4ECD0 /* Scene */,
@@ -148,6 +161,8 @@
 		A84CCB3527A21C5000C4ECD0 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				A86700BF27ACDDBD0040366C /* GifuTest */,
+				A86700B827ACB1050040366C /* StremojiTest */,
 				A84CCB3627A21E6000C4ECD0 /* CHChatList */,
 				A84CCB3927A21E9A00C4ECD0 /* etc */,
 			);
@@ -207,9 +222,8 @@
 		A84CCB4327A224F700C4ECD0 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				A84CCB4427A2251800C4ECD0 /* DMMessage.swift */,
-				A84CCB4A27A252BA00C4ECD0 /* CHMessage.swift */,
-				A82C9CD427A54BB10007B517 /* DummyMessage.swift */,
+				A84CCB4427A2251800C4ECD0 /* ChatList.swift */,
+				A82C9CD427A54BB10007B517 /* BodyBlocksKit.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -237,6 +251,34 @@
 				A86700B327AB61470040366C /* EmojiUtil.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A86700B527AC1F0E0040366C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A86700B627AC1F590040366C /* ChatExtension.swift */,
+				A86700C427ACDEEA0040366C /* TextView + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A86700B827ACB1050040366C /* StremojiTest */ = {
+			isa = PBXGroup;
+			children = (
+				A86700B927ACB12B0040366C /* StremojiTestViewController.swift */,
+				A86700BB27ACB1FC0040366C /* StremojiTestCell.swift */,
+				A86700BD27ACC8140040366C /* MyTextAttachment.swift */,
+			);
+			path = StremojiTest;
+			sourceTree = "<group>";
+		};
+		A86700BF27ACDDBD0040366C /* GifuTest */ = {
+			isa = PBXGroup;
+			children = (
+				A86700C027ACDDE70040366C /* GifuTestViewController.swift */,
+				A86700C227ACDE4E0040366C /* GifuTestCell.swift */,
+			);
+			path = GifuTest;
 			sourceTree = "<group>";
 		};
 		CA81F923FA801EAA6F1F99BD /* Pods */ = {
@@ -320,7 +362,7 @@
 				A84CCB5627A2909500C4ECD0 /* emoji.json in Resources */,
 				A84CCB5727A2909500C4ECD0 /* emoji_sort.json in Resources */,
 				A84CCB2C27A11EC500C4ECD0 /* sample.GIF in Resources */,
-				A84CCB3E27A2214C00C4ECD0 /* dm_chat_list.json in Resources */,
+				A84CCB3E27A2214C00C4ECD0 /* news_channel.json in Resources */,
 				A84CCB2227A10A1000C4ECD0 /* LaunchScreen.storyboard in Resources */,
 				A84CCB3027A1224100C4ECD0 /* jeremy.gif in Resources */,
 				A84CCB1F27A10A1000C4ECD0 /* Assets.xcassets in Resources */,
@@ -376,16 +418,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A86700BA27ACB12B0040366C /* StremojiTestViewController.swift in Sources */,
 				A84CCB5327A25E2200C4ECD0 /* Observable.swift in Sources */,
 				A84CCB2A27A10DA100C4ECD0 /* TabBarViewController.swift in Sources */,
-				A84CCB4527A2251800C4ECD0 /* DMMessage.swift in Sources */,
+				A84CCB4527A2251800C4ECD0 /* ChatList.swift in Sources */,
 				A84CCB1A27A10A0E00C4ECD0 /* ViewController.swift in Sources */,
-				A84CCB4B27A252BA00C4ECD0 /* CHMessage.swift in Sources */,
+				A86700C527ACDEEA0040366C /* TextView + Extension.swift in Sources */,
+				A86700BE27ACC8140040366C /* MyTextAttachment.swift in Sources */,
+				A86700C327ACDE4E0040366C /* GifuTestCell.swift in Sources */,
 				A84CCB4027A2219000C4ECD0 /* ChatService.swift in Sources */,
-				A82C9CD527A54BB10007B517 /* DummyMessage.swift in Sources */,
+				A82C9CD527A54BB10007B517 /* BodyBlocksKit.swift in Sources */,
 				A86700B427AB61470040366C /* EmojiUtil.swift in Sources */,
+				A86700C127ACDDE70040366C /* GifuTestViewController.swift in Sources */,
+				A86700B727AC1F590040366C /* ChatExtension.swift in Sources */,
 				A84CCB1627A10A0E00C4ECD0 /* AppDelegate.swift in Sources */,
 				A84CCB2E27A11F0900C4ECD0 /* SecondViewController.swift in Sources */,
+				A86700BC27ACB1FC0040366C /* StremojiTestCell.swift in Sources */,
 				A84CCB1827A10A0E00C4ECD0 /* SceneDelegate.swift in Sources */,
 				A84CCB3B27A21ECD00C4ECD0 /* MessageCell.swift in Sources */,
 				A84CCB5127A2588E00C4ECD0 /* CHChatListViewModel.swift in Sources */,

@@ -13,4 +13,8 @@ target 'GIFinTextViewPrx' do
   pod 'SnapKit', '~> 5.0.0'
   pod 'SwiftGifOrigin', '~> 1.7.0'
   pod 'Streamoji'
+  pod 'Differ'
+  pod 'DifferenceKit'
+  pod 'Gifu'
+  pod 'lottie-ios'
 end

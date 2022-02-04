@@ -31,12 +31,11 @@ class MessageCell: UITableViewCell {
         "bowing": .imageUrl("https://github.com/GetStream/Streamoji/blob/main/meta/emojis/let_me_in.gif?raw=true"),
         
     ]
-
+    
     //MARK: - UI Components
     var textView = UITextView().then {
         $0.isEditable = false
         $0.isScrollEnabled = false
-        $0.font = .systemFont(ofSize: 30)
     }
     
     //MARK: - Life Cycle
@@ -72,44 +71,8 @@ class MessageCell: UITableViewCell {
     }
     
     //MARK: - Functions
-    func configure(chChatData: CHDataClass){
-        guard let computedBlocksKit = chChatData.computedBlocksKit else {
-            print("configure computedBlocksKit is nil")
-            return
-        }
-            
-//        let aaaa = "\u{d83d}\u{dc24}"
-//        let unicodedData = aaaa.data(using: String.Encoding.utf8, allowLossyConversion: true)
-//        let emojiString = String(data: unicodedData!, encoding: String.Encoding.utf8)
-        
-        let dummyStr = NSMutableAttributedString(string: "")
-        
-        computedBlocksKit.elements?.forEach{ element in
-            element.elements?.forEach{ item in
-                switch(item.type){
-                case .section:
-                    break
-                case .emoji:
-                    //TODO: emoji 전용 json 파일에서 매칭해서 넣어주자
-                    dummyStr.append(NSAttributedString(string: item.name ?? ""))
-                    break
-                case .text:
-                    dummyStr.append(NSAttributedString(string: item.content ?? ""))
-                    break
-                case .mention:
-                    dummyStr.append(NSAttributedString(string: item.userID ?? ""))
-                    break
-                case .link:
-                    dummyStr.append(NSAttributedString(string: item.content ?? ""))
-                    break
-                default:
-                    print("default")
-                    break
-                }
-            }
-            //TODO: textView에 str 넣기
-            self.textView.attributedText = dummyStr
-        }
+    func configure(chChatData: Chat){
+        self.textView.attributedText = chChatData.getChatContent(size: 16.0)
         
         textView.flex.markDirty()
     }
@@ -120,44 +83,8 @@ class MessageCell: UITableViewCell {
     }
     
     func setUI(){
-        self.contentView.flex.padding(16.0).define { flex in
-            flex.addItem(textView).grow(1)
+        self.contentView.flex.padding(8.0).define { flex in
+            flex.addItem(textView)
         }
     }
 }
-
-
-
-//    first.elements?.forEach { element in
-////                print("element --> \(element)")
-//        switch(element.type){
-//        case  .text:
-//            //TODO: 이모지를 반환
-//            dummyStr = "\(dummyStr)\(element.name ?? "")"
-////                    print("text --> \(dummyStr)\n")
-//            break
-//        case .mention:
-//            //TODO: 맨션
-//            dummyStr = "\(dummyStr)\(element.userID ?? "")"
-////                    print("mention --> \(dummyStr)\n")
-//            break
-//        case .link:
-//            //TODO: 본문
-//            dummyStr = "\(dummyStr)\(element.content ?? ""), \(element.url)"
-////                    print("link --> \(dummyStr)\n")
-//            break
-//        case .emoji:
-//            //TODO: 본문
-//            dummyStr = "\(dummyStr)\(element.name ?? "")"
-////                    print("emoji --> \(dummyStr)\n")
-//            break
-//        case .section:
-//            //TODO: 본문
-//            dummyStr = "\(dummyStr)\(element.elements)"
-////                    print("section --> \(element)\n")
-//            break
-//        default:
-//            //TODO: 예외
-//            print("예외 type -> \(element.type), content -> \(element)\n")
-//            break
-//        }

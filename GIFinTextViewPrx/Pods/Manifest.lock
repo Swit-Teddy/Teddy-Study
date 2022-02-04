@@ -1,6 +1,15 @@
 PODS:
+  - Differ (1.4.5)
+  - DifferenceKit (1.2.0):
+    - DifferenceKit/Core (= 1.2.0)
+    - DifferenceKit/UIKitExtension (= 1.2.0)
+  - DifferenceKit/Core (1.2.0)
+  - DifferenceKit/UIKitExtension (1.2.0):
+    - DifferenceKit/Core
   - FlexLayout (1.3.23)
+  - Gifu (3.3.1)
   - Kingfisher (7.1.2)
+  - lottie-ios (3.3.0)
   - Nuke (8.4.1)
   - PinLayout (1.10.0)
   - SnapKit (5.0.1)
@@ -12,8 +21,12 @@ PODS:
   - Then (2.7.0)
 
 DEPENDENCIES:
+  - Differ
+  - DifferenceKit
   - FlexLayout
+  - Gifu
   - Kingfisher (~> 7.0)
+  - lottie-ios
   - PinLayout
   - SnapKit (~> 5.0.0)
   - Streamoji
@@ -22,8 +35,12 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - Differ
+    - DifferenceKit
     - FlexLayout
+    - Gifu
     - Kingfisher
+    - lottie-ios
     - Nuke
     - PinLayout
     - SnapKit
@@ -33,8 +50,12 @@ SPEC REPOS:
     - Then
 
 SPEC CHECKSUMS:
+  Differ: 3b6bd78e2b20cc795d9a86f7641d087524e4273e
+  DifferenceKit: 5659c430bb7fe45876fa32ce5cba5d6167f0c805
   FlexLayout: 5b44c0538e7eaa2110e3160dfdfb74611676fb91
+  Gifu: 416d4e38c4c2fed012f019e0a1d3ffcb58e5b842
   Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+  lottie-ios: 6ac74dcc09904798f59b18cb3075c089d76be9ae
   Nuke: d780e3507a86b86c589ab3cc5cd302d5456f06fb
   PinLayout: e50e9a748b632905fca6e67043ea4b05d6c92186
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
@@ -43,6 +64,6 @@ SPEC CHECKSUMS:
   SwiftyGif: dec758a9dd3d278e5a855dbf279bf062c923c387
   Then: acfe0be7e98221c6204e12f8161459606d5d822d
 
-PODFILE CHECKSUM: b1580d99826d6d1a69579a779bbfc69bc2e94ca6
+PODFILE CHECKSUM: 0b0befed31eee37c176bf150be41ba25cc2adde0
 
 COCOAPODS: 1.11.2
