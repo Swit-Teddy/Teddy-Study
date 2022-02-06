@@ -61,6 +61,10 @@ class ViewController: UIViewController {
     func setUI(){
         self.view.addSubview(tableView)
     }
+    
+    func confilctTestFunc(){
+        print("A confilct func 입니당")
+    }
 }
 
 
