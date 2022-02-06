@@ -63,8 +63,8 @@ class ViewController: UIViewController {
     }
     
     func confilctTestFunc(){
-          print("B confilct func 입니당")
-      }
+        print("A confilct func 입니당")
+    }
 }
 
 
