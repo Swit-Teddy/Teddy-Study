@@ -11,7 +11,9 @@ class EmojiUtil {
     static let shared = EmojiUtil()
     var emojiDictionary:[String:[String:String]] = [:]
     
-    private init() { }
+    private init() {
+        makeEmojiDictionary()
+    }
     
     private func makeEmojiDictionary(){
         guard let fileURL = Bundle.main.url(forResource: "emoji", withExtension: "json") else { return }

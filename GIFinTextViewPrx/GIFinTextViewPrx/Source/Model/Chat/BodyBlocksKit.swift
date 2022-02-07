@@ -67,7 +67,7 @@ extension TextElements{
         case .link:
             return NSAttributedString(string: self.content ?? "")
         case .emoji:
-            return NSAttributedString(string: self.name ?? "")
+            return EmojiUtil.shared.getEmoji(name: self.name ?? "", size: 16)
         case .mention:
             return NSAttributedString(string: "@" + (self.userID ?? "" ))
         default:
@@ -76,64 +76,3 @@ extension TextElements{
         }
     }
 }
-
-//extension TextElements{
-//    func applyStyle()->NSAttributedString{
-//        switch(self.type){
-//        case .text:
-//            guard let content = self.content else {
-//                return .empty
-//            }
-//            var mutable = content
-//                .font(UIFont.regular)
-//                .color(UIColor.labelColor)
-//
-//            if let styles = self.styles{
-//                if let bold = styles.bold, bold{
-//                    mutable = mutable
-//                        .font(UIFont.bold)
-//                        .color(.labelColor)
-//                }
-//                if let code = styles.code, code{
-//                    mutable = mutable
-//                        .backgroundColor(.lightGray)
-//                        .color(.systemRed)
-//                }
-//                if let italic = styles.italic, italic{
-//                    mutable = mutable
-//                        .obliqueness(0.3)
-//                }
-//            }
-//            return mutable
-//
-//        case .link:
-//            guard let content = self.content else {return .empty}
-//            var mutable = content.font(UIFont.regular).color(UIColor.labelColor)
-//
-//            guard let url = self.url else {return mutable}
-//            guard let URL = NSURL(string: url) else {return mutable}
-//            mutable = mutable
-//                .color(UIColor.linkColor)
-//                .underline(color: UIColor.linkColor)
-//                .link(url: URL).fontSize(16)
-//
-//            return mutable
-//
-//        case .emoji:
-//            guard let name = self.name else {return .empty}
-//
-//            return EmojiUtils.shared.getEmoji(name: name,size:22)
-//
-//        case .mention:
-//            guard let userID = self.userID else {return .empty}
-//            return ("@" + userID)
-//                .color(UIColor.linkColor)
-//                .underline(color: UIColor.linkColor)
-//                .fontSize(16)
-//                .backgroundColor(.systemGray5)
-//
-//        case .none:
-//            return .empty
-//        }
-//    }
-//}
