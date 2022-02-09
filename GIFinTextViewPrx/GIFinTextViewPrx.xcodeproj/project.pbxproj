@@ -87,6 +87,7 @@
 		A84CCB0927A10A0E00C4ECD0 = {
 			isa = PBXGroup;
 			children = (
+				A867010627B35D8D0040366C /* ci_scripts */,
 				A84CCB1427A10A0E00C4ECD0 /* GIFinTextViewPrx */,
 				A84CCB1327A10A0E00C4ECD0 /* Products */,
 				CA81F923FA801EAA6F1F99BD /* Pods */,
@@ -279,6 +280,13 @@
 				A86700C227ACDE4E0040366C /* GifuTestCell.swift */,
 			);
 			path = GifuTest;
+			sourceTree = "<group>";
+		};
+		A867010627B35D8D0040366C /* ci_scripts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ci_scripts;
 			sourceTree = "<group>";
 		};
 		CA81F923FA801EAA6F1F99BD /* Pods */ = {
